@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="gu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rudra Trader — Car Frame Posters</title>
+  <meta name="description" content="Rudra Trader offers custom car frame poster prints with A4 sizes and direct order via WhatsApp." />
+  <style>
+    :root{
+      --brand:#0b5ed7;
+      --accent:#ff8c00;
+      --bg:#f6f8fc;
+      --card:#fff;
+      --text:#1a1f2b;
+      --muted:#5a6475;
+      --line:#e5ebf5;
+      --success:#1e9b5a;
+      --shadow:0 10px 28px rgba(17, 24, 39, 0.08);
+      --maxw:1180px;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Inter, "Segoe UI", Arial, sans-serif; background:linear-gradient(180deg,#f7f9fd 0%,#eef5ff 100%);
+      color:var(--text)
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:18px 18px 40px}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      background:rgba(255,255,255,0.8); border:1px solid rgba(255,255,255,0.6);
+      backdrop-filter:blur(8px); box-shadow:var(--shadow); border-radius:18px; padding:16px 18px; position:sticky; top:10px; z-index:20;
+    }
+    .brand-box{display:flex; align-items:center; gap:12px}
+    .logo-badge{
+      width:44px; height:44px; display:grid; place-items:center; border-radius:12px; font-weight:800; color:white;
+      background:linear-gradient(135deg,var(--brand),#3b91ff);
+      box-shadow:0 12px 28px rgba(11,94,215,0.25)
+    }
+    .brand-main{font-size:1.45rem; font-weight:800; letter-spacing:0.02em; color:var(--brand)}
+    .brand-sub{font-size:.75rem; color:var(--muted); margin-top:2px}
+    .top-pay{font-size:.9rem; color:var(--muted); text-align:right}
+    .top-pay strong{color:#0c1320}
+    .hero{
+      margin-top:24px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:20px; align-items:center;
+      background:linear-gradient(135deg,#ffffff 0%, #eef6ff 100%); padding:24px; border-radius:26px; box-shadow:var(--shadow); border:1px solid var(--line)
+    }
+    .hero h1{font-size:clamp(2rem,4vw,3.4rem); line-height:1.04; margin:0 0 14px}
+    .hero p{margin:0 0 18px; font-size:1.02rem; color:var(--muted); line-height:1.7}
+    .hero-actions{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 20px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border:none; border-radius:12px; padding:12px 18px; cursor:pointer; font-weight:700; font-size:.96rem; transition:transform .2s ease, box-shadow .2s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#1c74ff); color:#fff; box-shadow:0 14px 28px rgba(11,94,215,0.25)}
+    .btn.secondary{background:#eef5ff; border:1px solid #dfeafc; color:var(--brand)}
+    .btn.ghost{background:#fff; color:var(--text); border:1px solid var(--line)}
+    .hero-badges{display:flex; flex-wrap:wrap; gap:10px}
+    .badge{padding:8px 12px; background:#f1f6ff; color:#234; border:1px solid #dfeafc; border-radius:999px; font-size:.8rem; font-weight:600}
+    .hero-visual{position:relative; min-height:300px; border-radius:22px; overflow:hidden; background:linear-gradient(135deg,#dfeeff,#f5f8ff); border:1px solid var(--line)}
+    .hero-visual img{width:100%; height:100%; object-fit:cover; display:block}
+    .float-card{position:absolute; right:16px; bottom:16px; background:rgba(255,255,255,0.95); padding:12px 14px; border-radius:14px; box-shadow:var(--shadow); border:1px solid var(--line)}
+    .float-card strong{display:block; font-size:1.1rem; color:var(--brand)}
+    section{margin-top:26px}
+    .section-head{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px}
+    .section-head h2{margin:0; font-size:clamp(1.4rem,2vw,2.1rem)}
+    .section-head .subtle{color:var(--muted); font-size:0.92rem}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px}
+    .card{background:var(--card); border-radius:var(--radius); border:1px solid var(--line); box-shadow:var(--shadow); overflow:hidden; display:flex; flex-direction:column}
+    .poster{height:250px; background-size:cover; background-position:center; position:relative}
+    .poster::after{content:"A4 Poster"; position:absolute; left:12px; bottom:12px; background:rgba(17,24,39,.75); color:#fff; font-size:.76rem; border-radius:999px; padding:6px 10px}
+    .card-body{padding:16px}
+    .card-title{font-size:1.08rem; font-weight:700; margin-bottom:8px}
+    .price-row{display:flex; align-items:center; justify-content:space-between; gap:8px; margin:14px 0 0}
+    .price{font-size:1.1rem; font-weight:800; color:var(--accent)}
+    .size{background:#f1f6ff; color:#264; border-radius:999px; padding:6px 10px; font-size:.75rem; font-weight:700}
+    .features{margin-top:18px; background:#fff; border:1px solid var(--line); border-radius:22px; box-shadow:var(--shadow); padding:18px}
+    .features-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:12px}
+    .feature{padding:14px; border-radius:16px; background:#f8fbff; border:1px solid var(--line)}
+    .feature strong{display:block; margin-bottom:6px}
+    .feature span{color:var(--muted); font-size:.9rem; line-height:1.6}
+    .footer-note{padding:18px 0 8px; color:var(--muted); font-size:.9rem; text-align:center}
+    .modal-back{position:fixed; inset:0; background:rgba(8,13,18,0.52); display:none; align-items:center; justify-content:center; z-index:100; padding:18px}
+    .modal{background:#fff; width:min(980px,96vw); border-radius:24px; box-shadow:0 28px 60px rgba(0,0,0,0.2); overflow:hidden; border:1px solid var(--line)}
+    .modal-header{padding:18px 20px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .modal-header h3{margin:0; font-size:1.3rem}
+    .modal-body{display:grid; grid-template-columns:0.9fr 1.1fr; gap:20px; padding:20px}
+    .stage{padding:12px; border:1px solid var(--line); background:#f8fbff; border-radius:18px}
+    .item-thumb{height:250px; background-size:cover; background-position:center; border-radius:14px; border:1px solid var(--line)}
+    .product-name{font-size:1.15rem; font-weight:800; margin-top:12px}
+    .product-price{font-size:1.2rem; font-weight:800; color:var(--accent); margin-top:6px}
+    .payment-box{margin-top:14px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:12px}
+    .payment-box h4{margin:0 0 8px; font-size:1rem}
+    .payment-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    .qr-box{width:132px; height:132px; border-radius:12px; border:1px solid var(--line); background:#fff; display:grid; place-items:center; overflow:hidden}
+    .qr-box img{width:100%; height:100%; object-fit:cover}
+    .field{display:block; margin-bottom:12px}
+    .field label{display:block; font-size:.83rem; color:var(--muted); margin-bottom:6px; font-weight:600}
+    .field input, .field textarea, .field select{width:100%; border:1px solid var(--line); border-radius:12px; padding:11px 12px; font:inherit; background:#fff; color:var(--text)}
+    .field textarea{resize:vertical; min-height:90px}
+    .two-col{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+    .submit-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+    .confirm-box{display:none; margin-top:18px; border:1px solid #d6f0de; background:#eefaf2; border-radius:16px; padding:14px 16px; color:#133b26}
+    .confirm-box strong{display:block; margin-bottom:6px}
+    @media (max-width: 820px){
+      .hero{grid-template-columns:1fr}
+      .modal-body{grid-template-columns:1fr}
+      header{flex-direction:column; align-items:flex-start}
+      .top-pay{text-align:left}
+    }
+    @media (max-width:560px){
+      .two-col{grid-template-columns:1fr}
+      .btn{width:100%}
+      .submit-row .btn{flex:1 1 100%}
+      .hero{padding:18px}
+      .wrap{padding-inline:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand-box">
+        <div class="logo-badge">RT</div>
+        <div>
+          <div class="brand-main">Rudra Trader</div>
+          <div class="brand-sub">Car Frame Poster & Custom Prints</div>
+        </div>
+      </div>
+      <div class="top-pay">
+        UPI ID: <strong id="upiText">shaileshjasoliya9-2@okaxis</strong><br>
+        Google Pay / PhonePe / BHIM
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Premium Car Poster Prints for Your Space</h1>
+        <p>Explore stylish car frame posters with premium A4 prints. Order custom framed car posters for home, shop, garage, and gifting. Quick order flow with WhatsApp confirmation and secure UPI payment.</p>
+        <div class="hero-actions">
+          <button class="btn primary" onclick="scrollToProducts()">Explore Products</button>
+          <button class="btn secondary" onclick="openFirstProduct()">Order Now</button>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">A4 Size</div>
+          <div class="badge">Premium Finish</div>
+          <div class="badge">Fast Delivery</div>
+          <div class="badge">Custom Orders</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="Luxury car poster" />
+        <div class="float-card">
+          <strong>₹299</strong>
+          Starts at A4 Poster
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="section-head">
+        <h2>Car Poster Products</h2>
+        <div class="subtle">Select a design and place your order</div>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="features">
+      <div class="section-head" style="margin-bottom:0">
+        <h2>Why choose Rudra Trader?</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature">
+          <strong>Premium A4 Prints</strong>
+          <span>Clean, vibrant, high-quality poster print for home, office, garage, or shop display.</span>
+        </div>
+        <div class="feature">
+          <strong>Easy Order Flow</strong>
+          <span>Quick order and ready-to-send WhatsApp message for merchant confirmation.</span>
+        </div>
+        <div class="feature">
+          <strong>UPI Payment</strong>
+          <span>Simple and secure UPI payment with QR code and copy-to-clipboard support.</span>
+        </div>
+        <div class="feature">
+          <strong>Custom Sizes</strong>
+          <span>Need a special size or custom poster? We can take custom requests too.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">© 2026 Rudra Trader • Car Frame Posters • A4 • Mobile Responsive</div>
+  </div>
+
+  <div class="modal-back" id="modalBack">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h3 id="modalTitle">Order Poster</h3>
+        <button class="btn ghost" type="button" id="closeModal">Close</button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <div class="stage">
+            <div class="item-thumb" id="modalThumb"></div>
+            <div class="product-name" id="modalProductName">Classic Car Design</div>
+            <div class="product-price" id="modalProductPrice">₹299</div>
+          </div>
+          <div class="payment-box">
+            <h4>UPI Payment</h4>
+            <div class="payment-row">
+              <div class="qr-box"><img id="upiQr" alt="UPI QR" /></div>
+              <div>
+                <div style="font-size:.8rem; color:var(--muted); margin-bottom:8px">UPI ID:</div>
+                <div style="font-weight:700; margin-bottom:8px" id="modalUpi">shaileshjasoliya9-2@okaxis</div>
+                <button class="btn primary" type="button" id="copyUpiBtn">Copy UPI</button>
+                <div style="height:8px"></div>
+                <button class="btn secondary" type="button" id="openUpiBtn">Pay via UPI App</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form id="orderForm">
+            <div class="field">
+              <label>Full Name *</label>
+              <input id="name" required placeholder="Enter your full name" />
+            </div>
+            <div class="two-col">
+              <div class="field">
+                <label>Mobile Number *</label>
+                <input id="mobile" required inputmode="numeric" pattern="[0-9]*" placeholder="9876543210" />
+              </div>
+              <div class="field">
+                <label>Alternate Mobile</label>
+                <input id="altMobile" inputmode="numeric" pattern="[0-9]*" placeholder="Optional" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Email ID</label>
+              <input id="email" type="email" placeholder="Optional" />
+            </div>
+            <div class="field">
+              <label>Current Address *</label>
+              <textarea id="address" required placeholder="House / Street / Area"></textarea>
+            </div>
+            <div class="field">
+              <label>Landmark</label>
+              <input id="landmark" placeholder="Nearby landmark" />
+            </div>
+            <div class="two-col">
+              <div class="field">
+                <label>City *</label>
+                <input id="city" required placeholder="City" />
+              </div>
+              <div class="field">
+                <label>State *</label>
+                <input id="state" required placeholder="State" />
+              </div>
+            </div>
+            <div class="field">
+              <label>PIN Code *</label>
+              <input id="pin" required inputmode="numeric" pattern="[0-9]*" placeholder="Pin code" />
+            </div>
+            <div class="submit-row">
+              <button type="button" class="btn primary" id="submitOrderBtn">Order & Send WhatsApp</button>
+              <button type="button" class="btn ghost" id="previewBtn">Save Preview</button>
+            </div>
+          </form>
+
+          <div class="confirm-box" id="confirmBox">
+            <strong>Order Prepared</strong>
+            <div id="confirmText"></div>
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+              <button class="btn primary" type="button" id="sendAgainBtn">Send to WhatsApp Merchant</button>
+              <button class="btn ghost" type="button" id="doneBtn">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const upiId = 'shaileshjasoliya9-2@okaxis';
+    const merchantPhone = '919999999999'; // Replace with your actual WhatsApp number
+    const upiQrUrl = `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=${encodeURIComponent('upi://pay?pa=' + upiId + '&pn=Rudra%20Trader&tn=Poster%20Order')}`;
+
+    const products = [
+      { id:'P001', name:'Classic Mustang Frame', price:'₹299', image:'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80' },
+      { id:'P002', name:'Vintage Beetle Poster', price:'₹249', image:'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80' },
+      { id:'P003', name:'Sports Car Red', price:'₹349', image:'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80' },
+      { id:'P004', name:'Retro Blue Frame', price:'₹279', image:'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80' },
+      { id:'P005', name:'Muscle Car Poster', price:'₹329', image:'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=900&q=80' },
+      { id:'P006', name:'Luxury Sedan Art', price:'₹399', image:'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80' }
+    ];
+
+    const grid = document.getElementById('productGrid');
+    const modalBack = document.getElementById('modalBack');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalThumb = document.getElementById('modalThumb');
+    const modalProductName = document.getElementById('modalProductName');
+    const modalProductPrice = document.getElementById('modalProductPrice');
+    const upiQr = document.getElementById('upiQr');
+    const confirmBox = document.getElementById('confirmBox');
+    const confirmText = document.getElementById('confirmText');
+
+    function renderProducts() {
+      grid.innerHTML = products.map(p => `
+        <article class="card">
+          <div class="poster" style="background-image:url('${p.image}')"></div>
+          <div class="card-body">
+            <div class="card-title">${p.name}</div>
+            <div class="price-row">
+              <div class="price">${p.price}</div>
+              <div class="size">A4</div>
+            </div>
+            <div style="margin-top:16px; display:flex; gap:8px;">
+              <button class="btn primary" type="button" data-product="${p.id}">Order Now</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function openProductModal(productId) {
+      const p = products.find(x => x.id === productId);
+      if (!p) return;
+      modalBack.style.display = 'flex';
+      modalTitle.textContent = 'Order: ' + p.name;
+      modalThumb.style.backgroundImage = `url('${p.image}')`;
+      modalProductName.textContent = p.name;
+      modalProductPrice.textContent = p.price;
+      modalBack.dataset.productId = p.id;
+      upiQr.src = upiQrUrl;
+      document.getElementById('orderForm').reset();
+      confirmBox.style.display = 'none';
+      document.getElementById('confirmText').textContent = '';
+    }
+
+    document.getElementById('productGrid').addEventListener('click', (ev) => {
+      const btn = ev.target.closest('[data-product]');
+      if (btn) openProductModal(btn.dataset.product);
+    });
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+      modalBack.style.display = 'none';
+    });
+
+    modalBack.addEventListener('click', (ev) => {
+      if (ev.target === modalBack) modalBack.style.display = 'none';
+    });
+
+    document.getElementById('copyUpiBtn').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(upiId);
+        alert('UPI ID copied successfully: ' + upiId);
+      } catch (err) {
+        alert('Please copy manually: ' + upiId);
+      }
+    });
+
+    document.getElementById('openUpiBtn').addEventListener('click', () => {
+      const productId = modalBack.dataset.productId || 'P001';
+      const payUri = `upi://pay?pa=${upiId}&pn=Rudra%20Trader&tn=Poster%20Order%20${productId}`;
+      window.location.href = payUri;
+    });
+
+    function buildOrderMessage(data) {
+      const lines = [
+        'Rudra Trader - New Poster Order',
+        'Order ID: ' + data.orderId,
+        'Product: ' + data.product.name + ' (' + data.product.id + ')',
+        'Price: ' + data.product.price,
+        'Size: A4',
+        '',
+        'Customer Details:',
+        'Name: ' + data.name,
+        'Mobile: ' + data.mobile,
+        'Alternate Mobile: ' + (data.altMobile || '-'),
+        'Email: ' + (data.email || '-'),
+        'Address: ' + data.address,
+        'Landmark: ' + (data.landmark || '-'),
+        'City: ' + data.city,
+        'State: ' + data.state,
+        'PIN: ' + data.pin,
+        '',
+        'Payment UPI ID: ' + upiId,
+        'Please confirm this order and proceed.'
+      ];
+      return lines.join('\n');
+    }
+
+    function populateConfirmation(data) {
+      confirmText.innerHTML = `
+        <div><strong>Order:</strong> ${data.product.name} (${data.product.id})</div>
+        <div><strong>Customer:</strong> ${data.name}</div>
+        <div><strong>Mobile:</strong> ${data.mobile}</div>
+        <div><strong>Payment:</strong> ${upiId}</div>
+      `;
+      confirmBox.style.display = 'block';
+      confirmBox.dataset.message = buildOrderMessage(data);
+      confirmBox.dataset.whatsapp = `https://wa.me/${merchantPhone}?text=${encodeURIComponent(buildOrderMessage(data))}`;
+    }
+
+    document.getElementById('submitOrderBtn').addEventListener('click', () => {
+      const productId = modalBack.dataset.productId;
+      const product = products.find(x => x.id === productId) || products[0];
+      const name = document.getElementById('name').value.trim();
+      const mobile = document.getElementById('mobile').value.trim();
+      const altMobile = document.getElementById('altMobile').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const landmark = document.getElementById('landmark').value.trim();
+      const city = document.getElementById('city').value.trim();
+      const state = document.getElementById('state').value.trim();
+      const pin = document.getElementById('pin').value.trim();
+
+      if (!name || !mobile || !address || !city || !state || !pin) {
+        alert('Please fill all required fields before placing the order.');
+        return;
+      }
+
+      const orderId = 'RT' + Date.now().toString().slice(-6);
+      const data = { orderId, product, name, mobile, altMobile, email, address, landmark, city, state, pin };
+      populateConfirmation(data);
+      const waUrl = `https://wa.me/${merchantPhone}?text=${encodeURIComponent(buildOrderMessage(data))}`;
+      window.open(waUrl, '_blank');
+    });
+
+    document.getElementById('sendAgainBtn').addEventListener('click', () => {
+      const url = confirmBox.dataset.whatsapp;
+      if (url) window.open(url, '_blank');
+    });
+
+    document.getElementById('doneBtn').addEventListener('click', () => {
+      modalBack.style.display = 'none';
+    });
+
+    document.getElementById('previewBtn').addEventListener('click', () => {
+      const productId = modalBack.dataset.productId || 'P001';
+      const product = products.find(x => x.id === productId) || products[0];
+      const name = document.getElementById('name').value.trim() || 'N/A';
+      const mobile = document.getElementById('mobile').value.trim() || 'N/A';
+      const address = document.getElementById('address').value.trim() || 'N/A';
+      confirmText.innerHTML = `
+        <div><strong>Preview:</strong> ${product.name}</div>
+        <div><strong>Customer:</strong> ${name}</div>
+        <div><strong>Mobile:</strong> ${mobile}</div>
+        <div><strong>Address:</strong> ${address}</div>
+      `;
+      confirmBox.style.display = 'block';
+    });
+
+    function scrollToProducts() {
+      document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openFirstProduct() {
+      openProductModal(products[0].id);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalBack.style.display === 'flex') {
+        modalBack.style.display = 'none';
+      }
+    });
+
+    document.getElementById('upiText').textContent = upiId;
+    document.getElementById('modalUpi').textContent = upiId;
+    upiQr.src = upiQrUrl;
+    renderProducts();
+  </script>
+</body>
+</html>
